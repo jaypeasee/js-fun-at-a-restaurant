@@ -8,7 +8,6 @@ function createMenuItem(name, price, type) {
     price: price,
     type: type,
   }
-  return menuItem;
 };
 
 function addIngredients(ingredient1, ingredients) {
@@ -21,7 +20,6 @@ function addIngredients(ingredient1, ingredients) {
   if (isUnique) {
     ingredients.push(ingredient1);
   }
-return ingredients;
 };
 
 function formatPrice(formattedPrice) {
@@ -30,7 +28,6 @@ function formatPrice(formattedPrice) {
 
 function decreasePrice(decreasedPrice) {
   var price = decreasedPrice * .9;
-  return price;
 }
 
 function createRecipe(title, ingredients, type) {
@@ -39,7 +36,6 @@ function createRecipe(title, ingredients, type) {
     ingredients: ingredients,
     type: type,
   }
-  return recipe;
 };
 
 

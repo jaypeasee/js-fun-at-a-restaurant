@@ -1,13 +1,11 @@
 function takeOrder(orderNumber, orderArray) {
   if (orderArray.length <= 2) {
     orderArray.push(orderNumber);
-    return orderArray;
   }
 };
 
 function refundOrder(orderNumber, orderArray) {
-  orderArray.shift();
-  return orderArray;
+  orderArray.splice(orderNumber - 1, 1);
 };
 
 function listItems(itemsArr) {
@@ -18,7 +16,7 @@ function listItems(itemsArr) {
   }
   newOrderItems = orderItems.substring(0, orderItems.length - 2);
   return newOrderItems;
-}
+};
 
 function searchOrder(ordersArr, orderChecker) {
   var orderPresent = false;
@@ -27,7 +25,6 @@ function searchOrder(ordersArr, orderChecker) {
       orderPresent = true;
     }
   }
-    console.log(orderPresent);
     return orderPresent;
   };
 

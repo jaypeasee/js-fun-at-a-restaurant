@@ -31,8 +31,6 @@ function addMenuItem(restaurant, newItem) {
       restaurant.menus.dinner.push(newItem);
     }
   }
-
-  return restaurant;
 };
 
 
